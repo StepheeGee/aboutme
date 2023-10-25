@@ -16,7 +16,6 @@ I created a webpage that quizzes users on five facts about me, using JavaScript.
 ### Lighthouse Accessibility Report Score
 ![LighthouseReport](Lighthouse.png)
 
-* Provide a screenshot of your score after running a Lighthouse Accessibility report.
 
 ### Reflections and Comments
 

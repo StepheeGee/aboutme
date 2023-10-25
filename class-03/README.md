@@ -1,22 +1,21 @@
 
 # LAB - 03
 
-## About Me
+## About Me (Extended)
 
-I created a webpage that quizzes users on five facts about me, using JavaScript. The HTML/CSS allows the webpage to display basic information about me to the user.
+I continues to build off of your lab 02 by adding additional functionality to my About Me Guessing Game. If you'll remember,in lab 02, I created a webpage that quizzes users on five facts about me, using JavaScript. The HTML/CSS allows the webpage to display basic information about me to the user.
 
 ### Author: Stephanie G. Johnson
 
 ### Links and Resources
 
-* [Submission URL](https://github.com/StepheeGee/class-02.git)
+* [Submission URL](https://github.com/StepheeGee/aboutme.git)
 
 * [Command+shift+M](https://stackoverflow.com/questions/58017905/how-to-find-out-problems-in-this-file-errors-in-vs-code): How to find errors in VS Code
 
 ### Lighthouse Accessibility Report Score
-![LighthouseReport](Lighthouse.png)
+![LighthouseReport](......)
 
-* Provide a screenshot of your score after running a Lighthouse Accessibility report.
 
 ### Reflections and Comments
 
