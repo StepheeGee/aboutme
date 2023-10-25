@@ -1,57 +1,56 @@
 'use strict';
 
-
 let userName = prompt("What is your name?");
 console.log(`Name entered: ${userName}`);
 
 if (userName) {
-  let live = prompt(`${userName}, well done! Does Steph live in Atlanta? (Type 'yes' or 'no')`).toLowerCase();
+  let live = prompt(`${userName}, does Steph live in Atlanta? (Type 'yes' or 'no')`).toLowerCase();
   console.log(`Steph lives in Atlanta: ${live}`);
-  alert(`Steph lives in Atlanta: ${live}`);
+  
 
   //switch statement
   switch (live) {
     case "yes":
     case "y":
-      let children = prompt('Does she have children? (Type "yes" or "no")').toLowerCase();
-      console.log(`Steph has children: ${children}`);
-      alert(`Steph has children: ${children}`);
+      let children = prompt('Awesome job! Does she have children? (Type "yes" or "no")').toLowerCase();
+      console.log(`Steph has no children: ${children}`);
+      alert(`Steph doesn't have any children.`);
 
       if (children === "no" || children === "n") { 
-        let pets = prompt(`Right...again, ${userName}! Does Steph have a pet? (Type 'yes' or 'no')`).toLowerCase();
+        let pets = prompt(`${userName}, does Steph have a pet? (Type 'yes' or 'no')`).toLowerCase();
         console.log(`Steph has a pet: ${pets}`);
-        alert(`Steph has a pet: ${pets}`);
+        alert(`Yes, she has a dog named Tot.`);
 
         if (pets === "yes" || pets === "y") {
-          let bar = prompt(`Correct ${userName}! Steph is an attorney. Did she pass the state bar exam? (Type 'yes' or 'no')`).toLowerCase();
-          console.log(`Steph passed the state bar exam: ${bar}`);
-          alert(`Steph passed the state bar exam: ${bar}`);
+          let attorney = prompt(`Is Steph an attorney? (Type 'yes' or 'no')`).toLowerCase();
+          console.log(`Steph is an attorney: ${attorney}`);
+          
 
-          if (bar === "yes" || bar === "y") {
+          if (attorney === "yes" || attorney === "y") {
             let sure = prompt('Are you sure? (Type "yes" or "no")').toLowerCase();
 
             if (sure === "yes" || sure === "y") {
               alert("Congratulations! You are so right.");
             } else {
-              alert("Sorry. Maybe next time.");
+              alert(`Sorry. Maybe next time, ${userName}`);
             }
 
           } else {
-            alert("Please type 'yes' or 'no'.");
+            alert(`Incorrect. You'll get 'em next time, ${userName}.`);
           }
 
         } else {
-          alert("Please type 'yes' or 'no'.");
+          alert(`Incorrect. You'll get 'em next time, ${userName}.`);
         }
 
       } else {
-        alert("Please type 'yes' or 'no'.");
+        alert(`Incorrect. You'll get 'em next time, ${userName}.`);
       }
       break;
 
     case "no":
     case "n":
-        alert("Please type 'yes' or 'no'.");
+        alert(`Incorrect. You'll get 'em next time, ${userName}.`);
         break;
     
     default:
@@ -123,7 +122,7 @@ if (userName) {
 /* alert(`Hi, ${userName}, I'm Steph`);
 
 Does Steph live in Atlanta?
-  let live = prompt('${name}, well done! Does Steph live in Atlanta? (Type 'yes' or 'no')`);
+  let live = prompt('${userName}, well done! Does Steph live in Atlanta? (Type 'yes' or 'no')`);
   if (live){
     let children = prompt('Does she have children?(Type 'yes' or 'no')');
   } else {
@@ -132,4 +131,4 @@ Does Steph live in Atlanta?
 Does she have children?
 Does she have a pet?
 Did she pass the state bar exam?
-Are you sure?
+Are you sure? */
