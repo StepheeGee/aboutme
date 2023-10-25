@@ -9,7 +9,7 @@ I created a webpage that quizzes users on five facts about me, using JavaScript.
 
 ### Links and Resources
 
-* [submission PR](http://xyz.com)
+* [Submission URL](https://stepheegee.github.io/class-02/)
 * [Command+shift+M](https://stackoverflow.com/questions/58017905/how-to-find-out-problems-in-this-file-errors-in-vs-code): How to find errors in VS Code
 
 ### Lighthouse Accessibility Report Score
