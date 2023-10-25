@@ -9,7 +9,7 @@ I created a webpage that quizzes users on five facts about me, using JavaScript.
 
 ### Links and Resources
 
-* [Submission URL](https://github.com/StepheeGee/class-02.git)
+* [Submission URL](https://github.com/StepheeGee/aboutme.git)
 
 * [Command+shift+M](https://stackoverflow.com/questions/58017905/how-to-find-out-problems-in-this-file-errors-in-vs-code): How to find errors in VS Code
 
