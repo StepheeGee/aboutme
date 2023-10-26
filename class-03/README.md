@@ -11,16 +11,17 @@ I continues to build off of your lab 02 by adding additional functionality to my
 
 * [Submission URL](https://github.com/StepheeGee/aboutme.git)
 
-* [Command+shift+M](https://stackoverflow.com/questions/58017905/how-to-find-out-problems-in-this-file-errors-in-vs-code): How to find errors in VS Code
+* [parseInt()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/parseInt)
+
+* [The join() method](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/join)
+
+* [Float CSS](https://css.maxdesign.com.au/floatutorial/tutorial0613.htm)
 
 ### Lighthouse Accessibility Report Score
-![LighthouseReport](......)
+![LighthouseReport](LighthouseLab3.png)
 
 
 ### Reflections and Comments
 
-This was rough for me. I couldn't get my js to work for like an hour because I forgot to comment out the comment out the full set of code from my first try. Also, the nested if else statements got really confusing. I had to draw an actual diagram to figure out where I was going. My validation kept messing up, which was frustrating. Especially when I went back to add alerts instead of just console.log. One issue that I know I've created is that if the correct name is not entered, the user receives an alert to enter the correct name. But it's not a prompt. So I have to fix that. 
+I tried a lot of new concepts today and they were really difficult so it took a bit of time. I've been working on this assignment since about 4pm, and I'm finishing now at 11:15pm. I do feel like I learned a lot about the fundamentals. Especially with JavaScript. The arrays and loops are always tricky for me. So that took some time and research. But I completed it, and it works. I also had to take some time to unravel some of the work I did yesterday on lab 2. Because this lab required us to keep score of the correct guesses, yesterday's questions, which were nested conditional logic, had to be separated. 
 
-I've learned that I have to pay attention and not make simple mistakes of omission. I also learned that when you 'use strict' JS, you can't use name as a variable. I had to use userName. I also learned that files that start with dot are hidden. So I had to get help from a TA to locate the configuration files. 
-
-It took me about 5 hours to complete this. And I didn't know how long it would take, but I wish it hadn't taken so long. I'm frustrated at this point. 
