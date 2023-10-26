@@ -64,18 +64,19 @@ p{
   float: left;
   width: 30%;
   box-sizing: border-box;
-  padding: 20px;
+  padding-right: 20px;
   padding-left: 110px;
-  padding-top: 50px;
   padding-bottom: 50px;
   color: gray;
 
 }
 
 
+
+
 footer {
   background-color: rgb(61, 60, 64);
-  margin-top: 600px;
+  margin-top: 670px;
   margin-bottom: 0px;
   color: rgb(185, 190, 226);
   padding: 10px;
