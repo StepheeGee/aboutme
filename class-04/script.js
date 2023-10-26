@@ -117,21 +117,19 @@ function questionFive(){
         alert("Please type 'yes' or 'no'.");
       }
  }
-      alert(`Your current score is: ${score}`);
-      alert("Please enter your name to continue.");
-      
-  // Lab 3 Loop for Question 2
-function questionSix(){
-    for (let i = 1; i <= 4; i++) {
-      let guess = prompt('How many years has Steph been an attorney? Guess a number 0 - 20.');
-      let correctAnswer = 10;
-      guess = parseInt(guess);
-      
-      if (guess === correctAnswer) {
-        score++;
-        console.log('You are correct!');
-        alert(`Correct! Your current score is: ${score}`);
-        break;
+ 
+ // Lab 3 Loop for Question 2
+ function questionSix(){
+   for (let i = 1; i <= 4; i++) {
+     let guess = prompt('How many years has Steph been an attorney? Guess a number 0 - 20.');
+     let correctAnswer = 10;
+     guess = parseInt(guess);
+     
+     if (guess === correctAnswer) {
+       score++;
+       console.log('You are correct!');
+       alert(`Correct! Your current score is: ${score}`);
+       break;
       } else if (guess < correctAnswer) {
         console.log('Too low');
         alert(`Too low. You have ${4-i} tries left. Try again.`);
@@ -148,16 +146,14 @@ function questionSix(){
       }
     }
   }
-    
-function questionSeven(){
-    let correctAnswer = ["Cheese", "Pepperoni", "Mushrooms", "Olives", "Italian Sausage", "Pineapples"];
-    let correctGuesses = [];
+  
+  function questionSeven(){
+    let correctAnswer = ["cheese", "pepperoni", "mushrooms", "olives", "italian sausage", "pineapples"];
     let attempts = 6;
     while (attempts > 0) {
       let pizza = prompt(`What pizza topping does Steph like? You have ${attempts} attempts remaining.`).toLowerCase();
       if (correctAnswer.includes(pizza)) {
         score++;
-        correctGuesses.push(pizza);
         console.log('You are correct!');
         alert(`You are correct! Your final score is: ${score} out of 7. Well done!`);
         break;
@@ -168,17 +164,17 @@ function questionSeven(){
           alert(`Nope. You have ${attempts} tries left. Try again.`);
         } else {
           console.log('You have used all your attempts.');
-          alert(`You have used all your attempts. The correct answers are: ${correctGuesses.join(', ')}.\nYour final score is: ${score} out of 7. Well done!`);
+          alert(`You have used all your attempts. Your final score is: ${score} out of 7. Well done!`);
         }
       }
     }
   }
-    //Lab 3 Array for Question 3
-    
-    // I tried to use indexof instead of .includes but my code wasn't working. And I didn't realize it wasn't working until I had my friend try my 
-    
-// let correctAnswer = ["Cheese", "Pepperoni", "Mushrooms", "Olives", "Italian Sausage", "Pineapples"];
-// let attempts = 6;
+  //Lab 3 Array for Question 3
+  
+  // I tried to use indexof instead of .includes but my code wasn't working. And I didn't realize it wasn't working until I had my friend try my 
+  
+  // let correctAnswer = ["Cheese", "Pepperoni", "Mushrooms", "Olives", "Italian Sausage", "Pineapples"];
+  // let attempts = 6;
 // pizza = prompt(`What pizza topping does Steph like? You have ${attempts} attempts remaining.`).toLowerCase();
 // while (pizza !== correctAnswer) {
 //   if (correctAnswer.includes(pizza)) {
