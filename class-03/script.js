@@ -32,6 +32,8 @@ if (userName) {
   alert(`Your current score is: ${score}`);
 
   // Question 2
+
+  
   let children = prompt("Does Steph have children? (Type 'yes' or 'no')").toLowerCase();
 
   if (children === "yes" || children === "no") {
@@ -143,24 +145,34 @@ for (let i = 1; i <= 4; i++) {
 
 //Lab 3 Array for Question 3
 
+// I tried to use indexof instead of .includes but my code wasn't working. And I didn't realize it wasn't working until I had my friend try my 
+
 let correctAnswer = ["Cheese", "Pepperoni", "Mushrooms", "Olives", "Italian Sausage", "Pineapples"];
+let correctGuesses = [];
 
 for (let i = 1; i <= 6; i++) {
   let guess = prompt('What pizza topping does Steph like?').toLowerCase();
 
-  if (correctAnswer.indexOf(guess) !== -1) {
+  if (correctAnswer.includes(guess)) {
     score++;
+    correctGuesses.push(guess); 
     console.log('You are correct!');
     alert(`You are correct! Your final score is: ${score} out of 7. Well done!`);
     break;
   } else if (i === 6) {
     console.log('You have used all your attempts.');
-    alert(`You have used all your attempts. Your final score is: ${score} out of 7. Well done!`);
+    alert(`You have used all your attempts. The correct answers are: ${correctGuesses.join(', ')}.\nYour final score is: ${score} out of 7. Well done!`);
   } else {
     console.log('Nope.');
     alert(`Nope. You have ${6 - i} tries left. Try again.`);
   }
 }
+
+/* .push(guess): .push() is an array method in JavaScript that adds an element 
+to the end of an array. I used it to add the value of the guess variable 
+to the correctGuesses array.*/
+
+
 
 
 

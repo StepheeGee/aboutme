@@ -1,8 +1,8 @@
 
-# LAB - 03
+# LAB - 04
 
-## About Me (Extended)
-10.25.23
+## About Me (Final)
+10.26.23
 
 I continued to build off of your lab 02 by adding additional functionality to my About Me Guessing Game. If you'll remember,in lab 02, I created a webpage that quizzes users on five facts about me, using JavaScript. The HTML/CSS allows the webpage to display basic information about me to the user.
 
