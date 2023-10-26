@@ -149,7 +149,6 @@ for (let i = 1; i <= 6; i++) {
   let guess = prompt('What pizza topping does Steph like?').toLowerCase();
 
   if (correctAnswer.indexOf(guess) !== -1) {
-    // The indexOf method returns -1 if the value is not found in the array.
     score++;
     console.log('You are correct!');
     alert(`You are correct! Your final score is: ${score} out of 7. Well done!`);
