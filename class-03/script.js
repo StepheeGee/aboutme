@@ -147,7 +147,7 @@ for (let i = 1; i <= 4; i++) {
 
 // I tried to use indexof instead of .includes but my code wasn't working. And I didn't realize it wasn't working until I had my friend try my 
 
-let correctAnswer = ["Cheese", "Pepperoni", "Mushrooms", "Olives", "Italian Sausage", "Pineapples"];
+let correctAnswer = ["cheese", "pepperoni", "mushrooms", "olives", "italian sausage", "pineapples"];
 let correctGuesses = [];
 
 for (let i = 1; i <= 6; i++) {

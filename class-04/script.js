@@ -169,121 +169,151 @@ function questionFive(){
       }
     }
   }
-  //Lab 3 Array for Question 3
+
+
+/* Alternative functions
+
+'use strict';
+
+
+let score = 0;
+
+function newQuestion(question, rightAnswer, goodJobMessage, wrongMessage) {
+  let userAnswer = prompt(question).toLowerCase();
+  console.log(`${question} User's answer: ${userAnswer}`);
   
-  // I tried to use indexof instead of .includes but my code wasn't working. And I didn't realize it wasn't working until I had my friend try my 
-  
-  // let correctAnswer = ["Cheese", "Pepperoni", "Mushrooms", "Olives", "Italian Sausage", "Pineapples"];
-  // let attempts = 6;
-// pizza = prompt(`What pizza topping does Steph like? You have ${attempts} attempts remaining.`).toLowerCase();
-// while (pizza !== correctAnswer) {
-//   if (correctAnswer.includes(pizza)) {
-//     score++;
-//     console.log('You are correct!');
-//     alert(`You are correct! Your final score is: ${score} out of 7. Well done!`);
-//     break;
-//   } else {
-//     attempts--;
-//     if (attempts > 0) {
-//       console.log('Nope.');
-//       alert(`Nope. You have ${attempts} tries left. Try again.`);
-//     } else {
-//       console.log('You have used all your attempts.');
-//       alert(`You have used all your attempts. Your final score is: ${score} out of 7. Well done!`);
-//     }
-//   }
-// }
+  if (userAnswer === rightAnswer) {
+    score++;
+    console.log(goodJobMessage);
+    alert(goodJobMessage);
+  } else {
+    console.log(wrongMessage);
+    alert(wrongMessage);
+  }
+}
 
-  
-  // let correctAnswer = ["cheese", "pepperoni", "mushrooms", "olives", "italian Sausage", "pineapples"];
-  // let correctGuesses = [];
-  // let attempts = 6;
-  
-  
-  // while(attempts > 0){
-    //   let guess = prompt(`What pizza topping does Steph like? You have ${attempts}/7 attempts left`);
-    //   if(correctAnswer.includes(pizza)){
-//     score++;
-//     alert('we did it');
-//   } else {
-//     alert('did not work');
-//   }
-
-// }
+function newQuiz() {
+  let userName = prompt("What is your name?");
+  console.log(`Name entered: ${userName}`);
 
 
-// for (let i = 1; i <= 6; i++) {
-//   let guess = prompt('What pizza topping does Steph like?').toLowerCase();
+  if (userName) {
+    alert(`Hi ${userName}! We're going to play a game where I ask you seven questions. Press OK to begin`);
+    
+    // Question 1
+    newQuestion(
+      `${userName}, does Steph live in Atlanta? (Type 'yes' or 'no')`,
+      "yes",
+      "Correct! Steph lives in Atlanta.",
+      "Incorrect. Steph does live in Atlanta."
+    );
 
-//   if (guess.toLowerCase() == correctAnswer[0] ) {
-//     score++;
-//     correctGuesses.push(guess); 
-//     console.log('You are correct!');
-//     alert(`You are correct! Your final score is: ${score} out of 7. Well done!`);
-//     break;
-//   } else if (i === 6) {
-//     console.log('You have used all your attempts.');
-//     alert(`You have used all your attempts. The correct answers are: ${correctGuesses.join(', ')}.\nYour final score is: ${score} out of 7. Well done!`);
-//   } else {
-//     console.log('Nope.');
-//     alert(`Nope. You have ${6 - i} tries left. Try again.`);
-//   }
-// }
+    // Question 2
+    newQuestion(
+      "Does Steph have children? (Type 'yes' or 'no')",
+      "no",
+      "Great job! Steph doesn't have children.",
+      "Incorrect. Steph doesn't have children."
+    );
 
-/* .push(guess): .push() is an array method in JavaScript that adds an element 
-to the end of an array. I used it to add the value of the guess variable 
-to the correctGuesses array.*/
+    // Question 3
+    newQuestion(
+      "Does Steph have a pet? (Type 'yes' or 'no')",
+      "yes",
+      "Correct! Steph has a dog named Tot.",
+      "Incorrect. Steph has a dog named Tot."
+    );
+
+    // Question 4
+    newQuestion(
+      "Is Steph an attorney? (Type 'yes' or 'no')",
+      "yes",
+      "Congratulations! Steph is an attorney.",
+      "Incorrect. Steph is an attorney."
+    );
+
+    // Question 5
+    newQuestion(
+      "Does Steph like pizza? (Type 'yes' or 'no')",
+      "yes",
+      "Correct! Steph likes pizza.",
+      "Incorrect. Steph likes pizza."
+    );
 
 
+    alert(`Your final score is: ${score} out of 5. Well done!`);
+  } else {
+    alert("Please enter your name to continue.");
+  }
+}
 
 
-
-
-
+newQuiz();
 
 
 
 
-
-
-
-
-/* Lab 3 array 1st try
-let correctAnswer = ["Cheese","Pepperoni", "Mushrooms","Olives","Italian Sausage","Pineapples"];
-
-for (let i = 1; i <= 6; i++) {
-  let guess = prompt('What pizza topping does Steph like?');
+//Lab 3 Loop for Question 2
+for (let i = 1; i <= 4; i++) {
+  let guess = prompt('How many years has Steph been an attorney? Guess a number 0 - 20.');
+  let correctAnswer = 10;
+  guess = parseInt(guess);
 
   if (guess === correctAnswer) {
+    score++;
     console.log('You are correct!');
-    alert('You are correct!');
+    alert(`Correct! Your current score is: ${score}`);
     break;
+  } else if (guess < correctAnswer) {
+    console.log('Too low');
+    alert(`Too low. You have ${4-i} tries left. Try again.`);
   } else {
-    console.log('Nope.');
-    alert(`Nope. You have ${6-i} tries left. Try again.`);
+    console.log('Too high');
+    alert(`Too high. You have ${4-i} tries left. Try again.`);
     
-    if (i === 6) {
-    console.log(`You have used all your attempts. The correct answer is ${correctAnswer}`);
-    alert(`You have used all your attempts. The correct answer is ${correctAnswer}`);
-
+    if (i === 4) {
+    console.log(`You have used all your attempts. The correct answer is ${correctAnswer}.
+    Your current score is: ${score}.`);
+    alert(`You have used all your attempts. The correct answer is ${correctAnswer}
+    Your current score is: ${score}.`);
     }
   }
 }
+
+
+
+let correctAnswer = ["cheese", "pepperoni", "mushrooms", "olives", "italian sausage", "pineapples"];
+let attempts = 6;
+
+while (attempts > 0) {
+  let pizza = prompt(`What pizza topping does Steph like? You have ${attempts} attempts remaining.`).toLowerCase();
+
+  if (correctAnswer.includes(pizza)) {
+    score++;
+    console.log('You are correct!');
+    alert(`You are correct! Your final score is: ${score} out of 7. Well done!`);
+    break;
+  } else {
+    attempts--;
+    if (attempts > 0) {
+      console.log('Nope.');
+      alert(`Nope. You have ${attempts} tries left. Try again.`);
+    } else {
+      console.log('You have used all your attempts.');
+      alert(`You have used all your attempts. Your final score is: ${score} out of 7. Well done!`);
+    }
+  }
+}
+
 */
 
 
 
-/* Lab 3 loop first try
 
-for(let i=0; i<4; i++){
-  let age = prompt('How long has Steph been an attorney?');
-  if(age === 10){
-    console.log('you are correct');
-  } else if (age < 10){
-    console.log('too low');
-  } else if (age > 10){
-    console.log('too high');
-  } else  {
-    console.log('wrong answer');
-  }
-} */
+
+
+
+
+
+
+
