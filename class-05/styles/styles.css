@@ -1,0 +1,169 @@
+
+h1 {
+  background-color: rgb(67, 7, 115);
+  margin: 0;
+  padding: 20px 0;
+  border: 2px solid rgb(54, 14, 77);
+  box-shadow: 0px 5px 10px rgb(189, 167, 234);
+}
+
+.name {
+  color: rgb(202, 204, 214);
+  background-color: rgb(0, 0, 0);
+  margin: 0;
+  padding: 40px 15px 15px 5px;
+  font-size: 32px;
+  position: fixed; /* Fixed position */
+  top: 0; /* Stick to the top */
+  left: 0; /* Stick to the left */
+  z-index: 1; /* Ensure it's above other content */
+}
+
+body {
+  background-color: rgb(19, 19, 19);
+}
+
+h2 {
+  color: rgb(185, 190, 226);
+  border: 2px solid rgb(49, 26, 103);
+  padding: 5px 10px;
+  margin: 0;
+  box-shadow: 3px 3px 3px;
+}
+
+.snack-title {
+  font-weight: bold;
+  font-size: 24px;
+  margin-bottom: 10px;
+  text-align: center;
+  color: rgb(185, 190, 226);
+  border: 2px solid rgb(49, 26, 103);
+  box-shadow: 3px 3px 3px;
+}
+
+p {
+  color: gray;
+  text-align: justify;
+}
+
+.mint-green {
+  color: mintcream; /* Mint green color */
+}
+
+.career-info {
+  width: 70%;
+  box-sizing: border-box;
+  padding: 20px 20px 50px 20px;
+  float: left;
+  margin-top: 120px; /* Adjust the top margin to avoid overlap with the fixed header */
+}
+
+.snack-container {
+  width: 30%;
+  box-sizing: border-box;
+  padding: 0 20px 50px 20px;
+  float: left;
+  color: gray;
+}
+
+footer {
+  background-color: rgb(61, 60, 64);
+  position: fixed; /* Fixed position */
+  bottom: 0; /* Stick to the bottom */
+  left: 0; /* Stick to the left */
+  width: 100%;
+  color: rgb(185, 190, 226);
+  padding: 10px;
+}
+
+
+/*
+h1 {
+  background-color: rgb(67, 7, 115);
+  margin: -8px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-style: solid;
+  border-color: rgb(54, 14, 77);
+  box-shadow: 0px 40px 100px rgb(189, 167, 234);
+}
+
+.name {
+  color: rgb(202, 204, 214);
+  background-color: rgb(0, 0, 0);
+  margin-right: 800px;
+  margin-left: -8px;
+  margin-top: 7px;
+  padding-left: 15px;
+  padding-top: 40px;
+  padding-bottom: 15px;
+  padding-right: 5px;
+  margin-bottom: 50px;
+  font-size: 32px;
+
+}
+
+body {
+  background-color: rgb(19, 19, 19);
+}
+
+h2{
+  color: rgb(185, 190, 226);
+  border-style: solid;
+  border-color: rgb(49, 26, 103);
+  padding: 5px;
+  padding-left: 10px;
+  margin-right: 300px;
+  box-shadow: 3px 3px 3px;
+
+}
+
+.snack-title {
+  font-weight: bold; 
+  font-size: 24px; 
+  margin-bottom: 10px; 
+  text-align: center;
+  color: rgb(185, 190, 226);
+  border-style: solid;
+  border-color: rgb(49, 26, 103);
+  box-shadow: 3px 3px 3px;
+}
+
+p{
+  color: gray;
+  text-align: justify;
+}
+
+
+
+
+.career-info {
+  float: left; 
+  width: 70%; 
+  box-sizing: border-box; 
+  padding: 20px; 
+  padding-top: 80px;
+}
+
+.snack-container {
+  float: left;
+  width: 30%;
+  box-sizing: border-box;
+  padding-right: 20px;
+  padding-left: 110px;
+  padding-bottom: 50px;
+  color: gray;
+
+}
+
+
+
+
+footer {
+  background-color: rgb(61, 60, 64);
+  margin-top: 670px;
+  margin-bottom: 0px;
+  color: rgb(185, 190, 226);
+  padding: 10px;
+}
+*/
